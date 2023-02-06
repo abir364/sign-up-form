@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --color-text: white;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+@font-face {
+    font-family: my-cool-font;
+    src: url(./assets/Norse-Bold.otf);
+}
+
+h1 {
+    font-family: my-cool-font, Roboto;
+    color: var(--color-text);
+}
+
+.bg-image {
+    background-image: url(./halie-west-25xggax4bSA-unsplash.jpg);
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+    width: 40vw;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+}
+
+.form-container {
+    max-width: 60vw;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 15vh;
+}
+
+
+#logo-img {
+    height: 40px;
+    width: 40px;
+}
+
+.logo {
+    background-color: rgba(0, 0, 0, .5);
+    position: relative;
+    top: 30vh;
+    display: flex;
+    flex-direction: row;
+    gap:.8rem;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+fieldset {
+    
+}
