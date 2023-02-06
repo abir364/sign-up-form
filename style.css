@@ -23,6 +23,7 @@ body {
 h1 {
     font-family: my-cool-font, Roboto;
     color: var(--color-text);
+    font-size: 60px;
 }
 
 .bg-image {
@@ -36,7 +37,8 @@ h1 {
 .container {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    gap: 20px;
 }
 
 .container {
@@ -45,11 +47,13 @@ h1 {
 }
 
 .form-container {
-    max-width: 60vw;
+    height: auto;
+    width: 59vw;
     display: flex;
     flex-direction: column;
-    position: relative;
-    top: 15vh;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding: 5vh;
 }
 
 
@@ -59,9 +63,10 @@ h1 {
 }
 
 .logo {
-    background-color: rgba(0, 0, 0, .5);
+    height: auto;
+    background-color: rgba(0, 0, 0, .6);
     position: relative;
-    top: 30vh;
+    top: 20vh;
     display: flex;
     flex-direction: row;
     gap:.8rem;
@@ -71,5 +76,84 @@ h1 {
 }
 
 fieldset {
-    
+    border: 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.submit {
+    height: 2rem;
+    width: 10rem;
+    background-color: #596D48;
+    position: relative;
+    left: 5vw;
+    border-radius: .5em;
+    border: 1px solid #ffffff;
+    color: aliceblue;
+}
+
+.submit:active{
+    background-color: #2d3b20;
+    transform: translateY(3px);
+}
+
+.submit:hover{
+    cursor: pointer;
+}
+
+.fields {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+    background-color: rgb(247, 251, 255);
+    box-shadow: 0 10px 20px -2px rgb(138, 138, 138);
+    padding: 2rem;
+    justify-content: center;
+    border-radius: .5rem;
+}
+
+.form-input {
+    display: flex;
+    flex-flow: column wrap;
+    width: 40%;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    opacity: 80%;
+}
+
+input {
+    padding: .5rem;
+}
+
+.fields input:invalid {
+    border: 1px solid #b92326;
+    background-color: rgba(185, 35, 38, 0.25);
+}
+
+.fields input:focus:invalid {
+    background-color: transparent;
+    border: 1px solid #b92326;
+}
+
+.fields input:valid{
+    border: 1px solid #8BC34A;
+    background-color: rgba(139, 195, 74, 0.25);
+}
+.fields input:focus:valid{
+    border: 1px solid #8BC34A;
+    background-color: transparent;
+}
+
+#login a {
+    color: #596D48;
+    text-decoration: none;
+}
+
+#login {
+    padding-top: 1em;
 }
